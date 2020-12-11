@@ -40,12 +40,11 @@ def sum_array(array)
 end
 
 def add_s(array)
-    array_with_s = []
-    array.each do |word|
+    array.collect do |word|
         if word == array[1]
             array[1]
         else
-            array_with_s << word.concat("s")
+            word.concat("s")
         end
     end
 end
